@@ -10,7 +10,7 @@
 
 ### Actividad 05
 
-```phyton
+```python
 from microbit import *
 import utime
 
@@ -84,3 +84,4 @@ while True:
         if pin_logo.is_touched():
             reiniciar()
 ```
+
