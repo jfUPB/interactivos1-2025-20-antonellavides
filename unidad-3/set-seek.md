@@ -29,3 +29,4 @@ La bomba está representada con una máquina de estados que tiene tres estados p
 <img width="800" height="800" alt="Screenshot 2025-08-19 073543" src="https://github.com/user-attachments/assets/69fe7149-592e-4050-b221-a35c52091a2b" />
 
 
+
