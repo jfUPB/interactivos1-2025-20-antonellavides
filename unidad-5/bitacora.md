@@ -17,19 +17,19 @@ El micro:bit envía cuatro valores separados por comas:
 
 ### ¿Cómo es la estructura del protocolo ASCII usado?
 
-<X> → número entero con el valor de aceleración en X.
+X → número entero con el valor de aceleración en X.
 
-<Y> → número entero con el valor de aceleración en Y.
+Y → número entero con el valor de aceleración en Y.
 
-<A> → palabra “True” o “False” indicando si el botón A está presionado.
+A → palabra “True” o “False” indicando si el botón A está presionado.
 
-<B> → palabra “True” o “False” indicando si el botón B está presionado.
+B → palabra “True” o “False” indicando si el botón B está presionado.
 
 \n → salto de línea que marca el final del mensaje.
 
 ### Muestra y explica la parte del código de p5.js donde lee los datos del micro:bit y los transforma en coordenadas de la pantalla.
 
-js
+```js
 if (port.availableBytes() > 0) {
   let data = port.readUntil("\n");
   if (data) {
@@ -44,6 +44,7 @@ if (port.availableBytes() > 0) {
     }
   }
 }
+```
 
 - Lee la línea completa del puerto serial.
 
@@ -58,6 +59,7 @@ if (port.availableBytes() > 0) {
 El sketch compara el estado actual del botón con el estado anterior. Cuando el botón A pasa de false a true, se genera el evento “A pressed” y se cambian parámetros del dibujo y cuando el botón B pasa de true a false, se genera el evento “B released” y se cambia el color. Esto se controla con la función updateButtonStates(), que revisa si hubo cambios en los botones y ejecuta las acciones correspondientes.
 
 ### Capturas de pantalla de los algunos dibujos que hayas hecho con el sketch.
+
 
 
 
